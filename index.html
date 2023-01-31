@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="box">
+            <h1>Temperature Converter</h1>
+            <form id="tempCalc" onsubmit="calculateTemp(); return false">
+                <label for="temp" class="temp">Please Enter the temperature : </label><br>
+                <input type="number" name="temp" id="temp">
+
+                <select name="selectTemp" id="selectTemp">
+                    <option value="cel" >&#176; Celcius</option>
+                    <option value="fah" >&#176; Fahrenheit</option>
+                </select>
+                <br>
+                <input type="submit" name="temp" class="submit">
+
+                <p id="resultContainer"></p>
+            </form>
+        </div>
+    </section>
+</body>
+
+<script src="script.js"></script>
+
+</html>
